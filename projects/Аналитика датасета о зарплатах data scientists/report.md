@@ -591,7 +591,7 @@ plt.title('Anual salary by country')
 
 
     
-![png](DS_salary_files/DS_salary_9_1.png)
+![png](DS_salary_9_1.png)
     
 
 
@@ -629,13 +629,12 @@ plt.show()
 
 ```
 
-    C:\Users\HONOR\AppData\Local\Temp\ipykernel_17984\2668633297.py:11: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
-      box = ax.boxplot(data, labels=labels, patch_artist=True)
+ 
     
 
 
     
-![png](DS_salary_files/DS_salary_11_1.png)
+![png](DS_salary_11_1.png)
     
 
 
@@ -828,7 +827,7 @@ plt.show()
 
 
     
-![png](DS_salary_files/DS_salary_13_0.png)
+![png](DS_salary_13_0.png)
     
 
 
@@ -902,7 +901,7 @@ plt.grid()
 
 
     
-![png](DS_salary_files/DS_salary_15_0.png)
+![png](DS_salary_15_0.png)
     
 
 
@@ -1014,6 +1013,6 @@ plt.show() # H0 is incorrect
 
 
     
-![png](DS_salary_files/DS_salary_18_0.png)
+![png](DS_salary_18_0.png)
     
 
