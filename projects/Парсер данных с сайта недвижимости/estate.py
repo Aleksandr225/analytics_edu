@@ -151,16 +151,11 @@ if os.path.exists(filename):
     for col in ['rooms', 'area', 'price', 'current_floor', 'total_floors', 'remote_minutes']:
         if col in df_existing.columns:
             df_existing[col] = pd.to_numeric(df_existing[col], errors='coerce')
-    print(f'Ранее сохранено записей: {len(df_existing)}')
 else:
-    print('Файл не найден — создаём новый')
     df_existing = pd.DataFrame(columns=df_new.columns)
 
-print('Столбцы в существующем файле:', df_existing.columns.tolist())
-print('Столбцы в новых данных:', df_new.columns.tolist())
 
 df_combined = pd.concat([df_existing, df_new], ignore_index=True)
-print(f'Всего записей перед удалением дубликатов: {len(df_combined)}')
 
 key_columns = ['rooms', 'area', 'price', 'subway', 'current_floor', 'total_floors', 'remote_minutes']
 key_columns = [col for col in key_columns if col in df_combined.columns]
@@ -170,3 +165,4 @@ print(f'Всего записей после удаления дубликато
 
 df_combined.to_csv(filename, index=False)
 print(f'Данные сохранены в файл: {filename}')
+
